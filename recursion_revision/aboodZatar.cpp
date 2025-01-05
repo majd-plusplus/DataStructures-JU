@@ -1,4 +1,6 @@
 #include<iostream>
+#include"../lists/doublyLinked.h"
+
 using namespace std;
 
 // Create a recursive function to find the greatest common
@@ -136,9 +138,18 @@ int fib(int n){
 
 }
 
-int main(){
-   int a[]={3,5,2,12,15,13};
-   cout<<min(a,5)<<endl;
+//Consider the following circular doubly linked list, write the
+// implementation of the find_max functions (The private one and the
+// public one) these functions aim to return the maximum value of the
+// list recursively .
 
-    printR(a,5);
+//the answer is in the header file of the doubly linked list
+int main(){
+    list l;
+    l.addBegin(1);
+    l.addBegin(2);
+    l.addBegin(24);
+    l.addBegin(24);
+    l.addBegin(21);
+    cout<<l.max()<<endl;
 }
